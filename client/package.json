@@ -1,0 +1,60 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "SPA for ROI Abacus Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BobbieBarker/roi_abacus.git"
+  },
+  "keywords": [
+    "buzzy",
+    "buzzwords",
+    "go",
+    "here"
+  ],
+  "author": "bobbie barker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BobbieBarker/roi_abacus/issues"
+  },
+  "homepage": "https://github.com/BobbieBarker/roi_abacus#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/ramda": "^0.26.8",
+    "jest": "^24.8.0",
+    "ramda": "^0.26.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^6.5.2",
+    "apprun": "^1.19.2",
+    "bulma": "^0.7.5",
+    "dexie": "^2.0.4",
+    "rxjs": "^6.5.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": true
+      }
+    }
+  }
+}

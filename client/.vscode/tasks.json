@@ -1,0 +1,25 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "apprun launcher",
+      "type": "shell",
+      "command": "parcel index.html --log-level 4"
+    },
+    {
+      "label": "apprun-debugger",
+      // "dependsOn": "apprun launcher",
+      "osx": {
+        "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "args": [
+          "--remote-debugging-port=9222",
+          "--user-data-dir=remote-profile",
+          "--no-first-run",
+          "http://localhost:1234"
+        ]
+      }
+    }
+  ]
+}
