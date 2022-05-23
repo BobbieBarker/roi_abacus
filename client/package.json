@@ -35,7 +35,7 @@
     "@reactivex/rxjs": "^6.5.2",
     "apprun": "^1.19.2",
     "bulma": "^0.7.5",
-    "dexie": "^2.0.4",
+    "dexie": "^3.2.2",
     "rxjs": "^6.5.2"
   },
   "jest": {
